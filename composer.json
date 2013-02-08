@@ -20,7 +20,7 @@
         "symfony/finder": ">=2.1,<2.2-dev"
     },
     "autoload": {
-        "psr-0": { "Combro2k\\Bundle\\Combro2kSimpleGalleryBundle": "" }
+        "psr-0": { "Combro2k\\Bundle\\SimpleGalleryBundle": "" }
     },
     "minimum-stability": "dev",
     "target-dir": "Combro2k/Bundle/SimpleGalleryBundle"
