@@ -3,13 +3,14 @@ These files are in the gallery map: <br />
 <table>
     <tr>
 {% for picture in gallery %}
-    {% if loop.index is divisibleby(3) %}
+    {% if loop.index % 3 == 1 %}
     </tr>
     <tr>
     {% endif %}
-    <td>
-        {{ picture.getFileName }}
-    </td>
+        <td>
+            <a href="/gallery/{{ picture.getFileName }}"><img border="0" src="/gallery/{{ picture.getFileName }}" height="25%" width="50%"></a>
+            <span>{{ picture.getFileName }}</span>
+        </td>
 {% endfor %}
     </tr>
 </table>
