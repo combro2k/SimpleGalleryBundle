@@ -1,15 +1,15 @@
 These files are in the gallery map: <br />
 <br />
 <table>
+    <tr>
 {% for picture in gallery %}
     {% if loop.index is divisibleby(3) %}
-        <tr>
+    </tr>
+    <tr>
     {% endif %}
-        <td>
-            {{ picture.getFileName }}
-        </td>
-    {% if loop.index is divisibleby(3) %}
-        </tr>
-    {% endif %}
+    <td>
+        {{ picture.getFileName }}
+    </td>
 {% endfor %}
+    </tr>
 </table>
