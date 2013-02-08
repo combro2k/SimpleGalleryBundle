@@ -22,6 +22,8 @@ class DefaultController extends Controller
      * @param $name
      *
      * @return Response
+     *
+     * @Template()
      */
     public function indexAction($name)
     {
