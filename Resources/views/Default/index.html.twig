@@ -1,3 +1,15 @@
 These files are in the gallery map: <br />
 <br />
-{{ gallery|dump }}
+<table>
+{% for picture in gallery %}
+    {% if loop.index % 3 == 0 %}
+        <tr>
+    {% endif %}
+        <td>
+            {{ picture.getFileName }}
+        </td>
+    {% if loop.index % 3 == 0 %}
+        </tr>
+    {% endif %}
+{% endfor %}
+</table>
