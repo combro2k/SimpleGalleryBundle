@@ -8,8 +8,10 @@ These files are in the gallery map: <br />
     <tr>
     {% endif %}
         <td>
-            <img src="{{ asset(('/uploads/gallery/' ~ picture.getFileName))| imagine_filter('thumbnail') }}" alt="" />
-            <span>{{ picture.getFileName }}</span>
+            <a href="{{ asset(('/uploads/gallery/' ~ picture.getFileName)) }}" target="_blank">
+                <img src="{{ asset(('/uploads/gallery/' ~ picture.getFileName))| imagine_filter('thumbnail') }}" alt="" /><br />
+                <span>{{ picture.getFileName }}</span>
+            </a>
         </td>
 {% endfor %}
     </tr>
