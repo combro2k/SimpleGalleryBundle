@@ -19,13 +19,11 @@ class DefaultController extends Controller
     protected $appRootDir;
 
     /**
-     * @param $name
-     *
-     * @return Response
+     * @return Array
      *
      * @Template()
      */
-    public function indexAction($name)
+    public function indexAction()
     {
         $this->appRootDir = $this->get('kernel')->getRootDir();
         $this->finder = new Finder();
