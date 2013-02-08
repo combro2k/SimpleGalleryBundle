@@ -8,7 +8,7 @@ These files are in the gallery map: <br />
         <td>
             {{ picture.getFileName }}
         </td>
-    {% if if loop.index is divisibleby(3) %}
+    {% if loop.index is divisibleby(3) %}
         </tr>
     {% endif %}
 {% endfor %}
