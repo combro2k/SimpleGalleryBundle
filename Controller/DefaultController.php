@@ -17,12 +17,6 @@ class DefaultController extends Controller
      */
     protected $appRootDir;
 
-    public function __construct()
-    {
-        $this->appRootDir = $this->get('kernel')->getRootDir();
-        $this->finder = new Finder();
-    }
-
     /**
      * @param $name
      *
@@ -30,6 +24,9 @@ class DefaultController extends Controller
      */
     public function indexAction($name)
     {
+        $this->appRootDir = $this->get('kernel')->getRootDir();
+        $this->finder = new Finder();
+
         $directories = array(
             sprintf('%s/%s', $this->appRootDir, 'web/gallery')
         );
