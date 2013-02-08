@@ -1,6 +1,6 @@
 <?php
 
-namespace Combro2k\Bundle\SGalleryBundle\DependencyInjection;
+namespace Combro2k\Bundle\SimpleGalleryBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('combro2k_s_gallery');
+        $rootNode = $treeBuilder->root('combro2k_simple_gallery');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

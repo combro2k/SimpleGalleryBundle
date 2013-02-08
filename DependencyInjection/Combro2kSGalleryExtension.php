@@ -1,6 +1,6 @@
 <?php
 
-namespace Combro2k\Bundle\SGalleryBundle\DependencyInjection;
+namespace Combro2k\Bundle\SimpleGalleryBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class Combro2kSGalleryExtension extends Extension
+class Combro2kSimpleGalleryExtension extends Extension
 {
     /**
      * {@inheritDoc}

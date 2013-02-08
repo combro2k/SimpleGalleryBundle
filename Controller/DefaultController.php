@@ -1,6 +1,6 @@
 <?php
 
-namespace Combro2k\Bundle\SGalleryBundle\Controller;
+namespace Combro2k\Bundle\SimpleGalleryBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Finder\Finder;
@@ -38,6 +38,6 @@ class DefaultController extends Controller
 
         var_dump($files);
 
-        return $this->render('Combro2kSGalleryBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('Combro2kSimpleGalleryBundle:Default:index.html.twig', array('name' => $name));
     }
 }

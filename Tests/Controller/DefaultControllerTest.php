@@ -1,6 +1,6 @@
 <?php
 
-namespace Combro2k\Bundle\SGalleryBundle\Tests\Controller;
+namespace Combro2k\Bundle\SimpleGalleryBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

@@ -1,7 +1,7 @@
 parameters:
-#    combro2k_s_gallery.example.class: Combro2k\Bundle\SGalleryBundle\Example
+#    combro2k_s_gallery.example.class: Combro2k\Bundle\SimpleGalleryBundle\Example
 
 services:
-#    combro2k_s_gallery.example:
-#        class: %combro2k_s_gallery.example.class%
+#    combro2k_simple_gallery.example:
+#        class: %combro2k_simple_gallery.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
