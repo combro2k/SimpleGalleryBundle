@@ -4,6 +4,7 @@ namespace Combro2k\Bundle\SimpleGalleryBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Finder\Finder;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 class DefaultController extends Controller
 {
@@ -31,10 +32,14 @@ class DefaultController extends Controller
             sprintf('%s/%s', $this->appRootDir, '../web/uploads/gallery')
         );
 
-        $files = $this->finder->in($directories)->files()->sortByModifiedTime();
+        $finder = $this->finder->in($directories)->files()->sortByModifiedTime();
+        $files = array();
+        foreach ($finder as $file) {
+            $files[] = $file;
+        }
 
-        var_dump($files);
-
-        return $this->render('Combro2kSimpleGalleryBundle:Default:index.html.twig', array('name' => $name));
+        return array(
+            'gallery' => $files
+        );
     }
 }
