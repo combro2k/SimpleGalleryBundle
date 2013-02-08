@@ -28,7 +28,7 @@ class DefaultController extends Controller
         $this->finder = new Finder();
 
         $directories = array(
-            sprintf('%s/%s', $this->appRootDir, 'web/gallery')
+            sprintf('%s/%s', $this->appRootDir, 'web/uploads/gallery')
         );
 
         $files = $this->finder->in($directories)->files()->sortByModifiedTime();
